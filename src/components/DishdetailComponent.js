@@ -73,7 +73,6 @@ import {Link} from 'react-router-dom';
 
 export default DishDetail;
 
-const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 
@@ -128,7 +127,7 @@ export class CommentForm extends Component {
                              placeholder="Your Name"
                              className="form-control"
                              validators={{
-                                 required, minLength: minLength(3), maxLength: maxLength(15)
+                                minLength: minLength(3), maxLength: maxLength(15)
                              }}
                               />
                          <Errors
