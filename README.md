@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Restaurant Application using ReactJS
+
+his project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Prerequisites
+
+ json-server
+
+### `npm install json-server -g`
+
+ Load the data from the DB
+### `json-server --watch db.json -p 3001 -d 2000`
+
 
 ## Available Scripts
 
